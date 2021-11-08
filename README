@@ -1,0 +1,12 @@
+# Currency Field for USD
+currency field is Deciaml with two decimal digit and maximum of 12 digits.
+
+# Database Constraints:
+Balance cannot be negative in a wallet,
+And hence no need to check every time we can let insertions and updates be optimistic
+
+# number of wallet per user
+number of wallet per user is one made by OneToOne Field
+
+# select for update
+rows that are going to be updated are going to be locked while in transaction
